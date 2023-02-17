@@ -8,18 +8,25 @@
       "id": 1
     },
     {
-      "text": "Grocery store",
-      "date": "2023-02-23",
-      "time": "00:37",
+      "text": "Hair Salon",
+      "date": "2023-02-19",
+      "time": "16:10",
       "reminder": true,
       "id": 2
     },
     {
-      "text": "Hair Salon",
-      "date": "2023-02-24",
-      "time": "21:30",
+      "text": "Grocery Store",
+      "date": "2023-02-20",
+      "time": "18:00",
       "reminder": true,
       "id": 3
+    },
+    {
+      "text": "Supermarket",
+      "date": "2023-02-24",
+      "time": "18:10",
+      "reminder": true,
+      "id": 4
     }
   ]
 }

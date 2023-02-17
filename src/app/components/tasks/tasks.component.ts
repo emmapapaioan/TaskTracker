@@ -14,10 +14,12 @@ export class TasksComponent implements OnInit {
   constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
+    // Get all the tasks from the taskService when the component is initialized
     this.taskService.getTasks().subscribe((tasks) => (this.
       tasks = tasks));
   }
 
+  // Delete a task by calling the taskService to delete it from the server
   deleteTask(task: Task) {
     this.taskService
     .deleteTask(task)
@@ -26,11 +28,13 @@ export class TasksComponent implements OnInit {
       );
   }
 
+  // Toggle a task's reminder status and call the taskService to update it on the server
   toggleReminder(task: Task) {
     task.reminder = !task.reminder;
     this.taskService.updateTaskReminder(task).subscribe();
   }
 
+  // Add a new task to the list and call the taskService to add it to the server
   addTask(task :Task) {
     this.taskService.addTask(task).subscribe((task)=>(this.tasks.push(task)));
   }

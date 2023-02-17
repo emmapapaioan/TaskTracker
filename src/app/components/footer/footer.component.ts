@@ -10,6 +10,7 @@ export class FooterComponent {
 
   constructor(private router: Router) {}
 
+  // Function to check if the current route matches a given route
   hasRoute(route: string) {
     return this.router.url === route;
   }
