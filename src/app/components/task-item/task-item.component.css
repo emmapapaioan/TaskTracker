@@ -14,3 +14,8 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  fa-icon:hover {
+    background-color: cadetblue;
+    border-radius: 10%;
+  }

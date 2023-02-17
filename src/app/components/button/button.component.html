@@ -1,4 +1,7 @@
-<button [ngStyle]="{'background-color': color}" class="btn" 
-(click)="onClick()">
+<button #hoverName
+    (mouseenter)="onMouseOver(hoverName)"
+    (mouseleave)="onMouseOut(hoverName)"
+    [ngStyle]="{'background-color': color}" class="btn" 
+    (click)="onClick()">
     {{text}}
 </button>

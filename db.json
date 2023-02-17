@@ -1,81 +1,25 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Appointment with housekeeper",
-      "date": "17/02/2023",
-      "time": "09:00",
-      "reminder": true
+      "text": "Doctor appointment",
+      "date": "2023-02-28",
+      "time": "17:20",
+      "reminder": true,
+      "id": 1
     },
     {
-      "id": 2,
-      "text": "Supermarket",
-      "date": "18/02/2023",
-      "time": "11:30",
-      "reminder": false
+      "text": "Grocery store",
+      "date": "2023-02-23",
+      "time": "00:37",
+      "reminder": true,
+      "id": 2
     },
     {
-      "id": 3,
-      "text": "Medical Treatment",
-      "date": "21/02/2023",
-      "time": "09:00",
-      "reminder": true
-    },
-    {
-      "id": 4,
       "text": "Hair Salon",
-      "date": "27/02/2023",
-      "time": "15:30",
-      "reminder": true
-    },
-    {
-      "id": 5,
-      "text": "First day at my internship",
-      "date": "01/03/2023",
-      "time": "08:50",
-      "reminder": false
-    },
-    {
-      "id": 6,
-      "text": "Prepare project for PLH23 [1]",
-      "date": "02/03/2023",
-      "time": "19:00",
-      "reminder": true
-    },
-    {
-      "id": 7,
-      "text": "Prepare project for PLH23 [2]",
-      "date": "03/03/2023",
-      "time": "19:00",
-      "reminder": true
-    },
-    {
-      "id": 8,
-      "text": "Prepare project for PLH23 [3]",
-      "date": "04/03/2023",
-      "time": "19:00",
-      "reminder": true
-    },
-    {
-      "id": 9,
-      "text": "Prepare project for PLH47 [1]",
-      "date": "05/03/2023",
-      "time": "19:00",
-      "reminder": true
-    },
-    {
-      "id": 10,
-      "text": "Prepare project for PLH47 [2]",
-      "date": "06/03/2023",
-      "time": "19:00",
-      "reminder": true
-    },
-    {
-      "id": 11,
-      "text": "Prepare project for PLH47 [3]",
-      "date": "07/03/2023",
-      "time": "19:00",
-      "reminder": true
+      "date": "2023-02-24",
+      "time": "21:30",
+      "reminder": true,
+      "id": 3
     }
   ]
 }

@@ -24,4 +24,8 @@ export class TaskItemComponent implements OnInit {
   onToggle(task: any) {
     this.onToggleReminder.emit(task);
   }
+
+  get title() {
+    return this.task.reminder ? 'Double click to set off the reminder' : 'Double click to set on the reminder';
+  }
 }
