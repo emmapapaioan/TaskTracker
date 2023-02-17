@@ -3,7 +3,7 @@
 https://user-images.githubusercontent.com/108992250/219679081-34ad6d8a-f656-43cf-9ad3-2683e5f8ae00.mp4
 
 <hr>
-This project is a basic implemantation of a task manager, where you can add your tasks by name, date and time. Also you set if you want a reminder for a specific task or not. 
+This project is a basic implemantation of a task manager, where you can add your tasks by name, date and time. Also you set if you want a reminder for a specific task or not. The tasks are stored in json format in a local database.
 
 ## Tools
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5. Also TypeScript was necessary for the components, HTML for some basic structure and a little of CSS.
