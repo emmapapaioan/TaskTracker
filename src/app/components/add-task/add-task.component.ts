@@ -17,17 +17,18 @@ export class AddTaskComponent implements OnInit{
   date!: string;
   time!: string;
   reminder: boolean = false;
+  completed: boolean = false;
 
   // Properties for the UI service
   showAddTask?: boolean;
-  subscription?: Subscription;
+  subscription: Subscription;
 
   constructor(private uiService: UiService) {
     // Subscribe to UI service to toggle the "Add Task" form visibility
     this.subscription = this.uiService
     .onToggle()
     .subscribe((value) =>
-    (this.showAddTask = value))
+    (this.showAddTask = value));
   }
 
   ngOnInit(): void { }
@@ -38,6 +39,12 @@ export class AddTaskComponent implements OnInit{
       // If the user tries to submit an empty task, show an alert and return
       alert('Please add a task.');
       return;
+    }else if(!this.date){
+      alert('Please add a date.');
+      return;
+    }else if(!this.time){
+      alert('Please add time.');
+      return;
     }
 
     // Create a new task object with the form input values
@@ -45,7 +52,8 @@ export class AddTaskComponent implements OnInit{
       text: this.text,
       date: this.date,
       time: this.time,
-      reminder: this.reminder
+      reminder: this.reminder,
+      completed: this.completed
     }
 
     // Emit the new task object to the parent component
@@ -56,6 +64,5 @@ export class AddTaskComponent implements OnInit{
     this.date = '';
     this.time = '';
     this.reminder = false;
-
   }
 }

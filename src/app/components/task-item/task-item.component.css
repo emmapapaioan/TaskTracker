@@ -2,11 +2,16 @@
     background: #f4f4f4;
     margin: 5px;
     padding: 10px 20px;
-    cursor: pointer;
+    padding-left: 35px;
+    
   }
   
   .task.reminder {
-    border-left: 5px solid green;
+    border-left: 20px solid green;
+  }
+
+  .task-title {
+    cursor: pointer;
   }
   
   .task h3 {
@@ -15,7 +20,23 @@
     justify-content: space-between;
   }
 
-  fa-icon:hover {
-    background-color: cadetblue;
-    border-radius: 10%;
+  .task h3 span {
+    display: flex;
+    align-items: center;
   }
+
+  .task:hover {
+    background: lightgray;
+  }
+
+  fa-icon {
+    padding-left: 35px;
+  }
+
+  fa-icon:hover {
+    cursor: pointer;
+  }
+
+  
+  
+  

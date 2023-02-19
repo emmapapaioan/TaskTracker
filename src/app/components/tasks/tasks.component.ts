@@ -34,6 +34,11 @@ export class TasksComponent implements OnInit {
     this.taskService.updateTaskReminder(task).subscribe();
   }
 
+  toggleComplete(task: Task) {
+    task.completed = !task.completed;
+    this.taskService.updateTaskCompleted(task).subscribe();
+  }
+  
   // Add a new task to the list and call the taskService to add it to the server
   addTask(task :Task) {
     this.taskService.addTask(task).subscribe((task)=>(this.tasks.push(task)));

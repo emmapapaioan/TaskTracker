@@ -1,16 +1,25 @@
-<div 
-title="{{title}}"
-[ngClass]="{reminder: task.reminder}" 
-class="task" 
-(dblclick)="onToggle(task)">
+<div class="task"
+[ngClass]="{reminder: task.reminder}">
     <h3>
-        {{task.text}}
-        <fa-icon 
+        <div title="{{title}}"
+        class="task-title" 
+        (click)="onToggle(task)">{{task.text}}</div>
+        <span>
+        <fa-icon type="checkbox"
             title="Click to delete the task"
             (click)="onDelete(task)" 
             [icon]="faTimes" 
             [ngStyle]="{color : 'red'}">
         </fa-icon>
+
+        <fa-icon type="checkbox"
+            title="Click to set the task completed"
+            [icon]="task.completed ? faCheckSquare : faSquare"
+            [ngStyle]="{ color: task.completed ? 'green' : 'lightblue' }"
+            (click)="onToggleComplete(task)">
+     </fa-icon>
+    </span>
+
     </h3>
     <p>{{task.date}} at {{task.time}}</p>
 </div>

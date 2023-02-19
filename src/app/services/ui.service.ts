@@ -23,4 +23,9 @@ export class UiService {
   onToggle(): Observable<any> {
     return this.subject.asObservable();
   }
+
+  // // Function to subscribe to the changes in 'showAddTask' through the subject
+  // onToggleComplete(): Observable<any> {
+  //   return this.subject.asObservable();
+  // }
 }

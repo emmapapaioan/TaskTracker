@@ -36,6 +36,12 @@ export class TaskService {
     return this.http.put<Task>(url, task, httpOptions);
   }
 
+  // Update the completed status of a task on the API
+  updateTaskCompleted(task: Task): Observable<Task> {
+    const url = `${this.apiUrl}/${task.id}`;
+    return this.http.put<Task>(url, task, httpOptions);
+  }
+
   // Add a new task to the API
   addTask(task: Task): Observable<Task> {
     return this.http.post<Task>(this.apiUrl, task, httpOptions);

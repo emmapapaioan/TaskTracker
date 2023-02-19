@@ -1,32 +1,28 @@
 {
   "tasks": [
     {
-      "text": "Doctor appointment",
-      "date": "2023-02-28",
-      "time": "17:20",
+      "text": "Hair Salon",
+      "date": "2023-12-02",
+      "time": "18:30",
       "reminder": true,
+      "completed": true,
       "id": 1
     },
     {
-      "text": "Hair Salon",
-      "date": "2023-02-19",
-      "time": "16:10",
+      "text": "Dentist Appointment",
+      "date": "2023-03-04",
+      "time": "17:30",
       "reminder": true,
+      "completed": false,
       "id": 2
     },
     {
-      "text": "Grocery Store",
-      "date": "2023-02-20",
-      "time": "18:00",
+      "text": "Car Service",
+      "date": "2023-04-04",
+      "time": "09:00",
       "reminder": true,
+      "completed": false,
       "id": 3
-    },
-    {
-      "text": "Supermarket",
-      "date": "2023-02-24",
-      "time": "18:10",
-      "reminder": true,
-      "id": 4
     }
   ]
 }
