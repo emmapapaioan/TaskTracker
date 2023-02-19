@@ -15,7 +15,7 @@ From the terminal, navigate to the folder of the project. Run `npm run server` t
 
 ##
 <details close>
-  <summary><h3>Click to see details for building projects using Angular</h3></summary>
+  <summary><h3>Click to see details on how to build projects using Angular</h3></summary>
 
   ## Development server
 
