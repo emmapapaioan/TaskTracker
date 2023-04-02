@@ -8,7 +8,7 @@ This project is a basic implementation of a task manager, where you can add your
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5. Also TypeScript was necessary for the components, HTML for some basic structure and a little of CSS.
 
 ## Run the project
-From the terminal, navigate to the folder of the project. Run `npm run server` to load the server database. In another terminal run `ng serve` to connect on Angular Live Development Server that is listening on localhost:4200. Finally open your browser on http://localhost:4200/.
+From the terminal, navigate to the folder of the project. Run ```npm install``` or ```npm install --legacy-peer-deps```, to install the necessary node_modules etc. Run `npm run server` to load the server database. In another terminal run `ng serve` to connect on Angular Live Development Server that is listening on localhost:4200. Finally open your browser on http://localhost:4200/.
 
 <em>This project was implemented as I was practising on the fundamentals of the framework Angular. Video source: https://www.youtube.com/watch?v=3dHNOWTI7H8 by Traversy Media.</em>
 
